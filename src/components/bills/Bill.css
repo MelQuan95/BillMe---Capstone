@@ -4,16 +4,30 @@
     margin: 25vh auto;
 }
 
-.billname {
+/* .billname {
     display: flex;
     justify-content: center;
+}
+
+.billdate {
+    display: flex;
+    justify-content: center;
+}
+
+.billamount {
+    display: flex;
+    justify-content: center; */
+/* } */
+
+.detailbuttons {
+    margin-left: 25%;
 }
 
 .billcard {
     border: red dashed 2px;
     width: 25%;
     display: block;
-    margin: 15vh auto;
+    margin: 5vh auto;
     color: rgb(58, 58, 58);
 }
 
@@ -198,3 +212,42 @@ body .cybr-btn+.cybr-btn {
 .link:hover {
     color: hsl(0, 0%, 31%);
 }
+
+
+
+button {
+  margin: 50px;
+  font-family: inherit;
+}
+
+
+/* Fill button styling */
+.fill {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 6px 15px 10px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #ce1224;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Fill Button  */

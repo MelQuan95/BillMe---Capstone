@@ -30,8 +30,9 @@ export const BillDetails = () => {
             <div className="billname">{bill.name}</div>
             <div className="billdate">{bill.date}</div>
             <div className="billamount">{bill.amount}</div>
-            <button onClick={billsDelete}>Delete</button>
-            <button onClick={() => { navigate(`/bills/edit/${bill.id}`) }}>Edit</button>
+        
+            <button className="fill" onClick={() => { navigate(`/bills/edit/${bill.id}`) }}>Edit</button>
+            <button className="fill" onClick={billsDelete}>Delete</button>
         </section>
     )
 }
