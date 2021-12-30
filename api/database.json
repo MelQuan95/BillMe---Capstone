@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "steve",
+      "email": "me@me.com"
+    },
+    {
+      "email": "melquanmgreen95@gmail.com",
+      "name": "MelQuan Green",
+      "id": 2
+    }
+  ],
+  "bills": [
+    {
+      "id": 1,
+      "userId": 2,
+      "name": "AEP1",
+      "date": "2022-01-01",
+      "amount": 89.32
+    },
+    {
+      "userId": 2,
+      "id": 2,
+      "name": "water",
+      "date": "12/25/21",
+      "amount": 74.25
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "gas11",
+      "date": "2021-12-01",
+      "amount": "26.01"
+    },
+    {
+      "userId": 2,
+      "name": "phone",
+      "date": "2021-12-31",
+      "amount": "75.00",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "name": "lola",
+      "date": "2021-12-31",
+      "amount": "7",
+      "id": 6
+    }
+  ],
+  "notes": [
+    {
+      "userId": 2,
+      "id": 1,
+      "note": "hello new year"
+    },
+    {
+      "userId": 2,
+      "id": 2,
+      "note": "hello "
+    }
+  ]
+}
