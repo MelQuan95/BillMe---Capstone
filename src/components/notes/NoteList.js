@@ -1,41 +1,45 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NoteContext } from "./NoteDataProvider"
 import { NoteCard } from "./NoteCard";
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 export const NoteList = () => {
-    const { getNotes, notes } = useContext(NoteContext)
-    
+  const { getNotes, notes } = useContext(NoteContext)
 
-    useEffect(() => {
-        console.log("NoteList: useEffect - getNotes")
-        getNotes()
-    }, [])
+  const [filteredNotes, SetFiltered] = useState([])
 
-    const navigate = useNavigate()
-    
-    return (
-        <>
-          <h1 className="NotesHeader">Notes</h1>
+  const { billId } = useParams();
+
+  useEffect(() => {
+    console.log("NoteList: useEffect - getNotes")
+    getNotes()
+  }, [])
+
+  const navigate = useNavigate()
+
+  return (
+    <>
+      <h1 className="NotesHeader">NOTES</h1>
+
       
-          <button onClick={() => navigate("/notes/create")}>
-                      New Note
-                  </button>
-          <div className="notes">
+      {/* notes.filter(bill => bill.id.toLowerCase().includes(searchTerms)). */}
+      <div className="notes">
 
-          {notes.map(note => {
+        {notes.filter((note) => {
+          return note.billId === +billId
+        }).map((note) => {
+          return <NoteCard
+          key={note.id}
+          note = {note}
 
-              return <NoteCard
-              key={note.id}
-              note={note}
 
-              />
-          }
-            
-            )}
-          
-            
-          </div>
-        </>
-        )
-      }
+        />
+         
+        })
+        }
+
+
+      </div>
+    </>
+  )
+}

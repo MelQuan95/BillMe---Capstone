@@ -13,7 +13,8 @@ export const BillForm = () => {
             userId: +localStorage.getItem("billme_user"),
             name: "",
             date: "",
-            amount: ""
+            amount: "",
+            paid: ""
 
         })
 
@@ -48,7 +49,9 @@ export const BillForm = () => {
                     userId: +localStorage.getItem("billme_user"),
                     name: bill.name,
                     date: bill.date,
-                    amount: bill.amount
+                    amount: +bill.amount,
+                    paid: bill.paid
+
         
                     
                 })
@@ -58,8 +61,8 @@ export const BillForm = () => {
                 userId: +localStorage.getItem("billme_user"),
                 name: bill.name,
                 date: bill.date,
-                amount: bill.amount
-    
+                amount: +bill.amount,
+                paid: false
                     
             })
             .then(() => navigate("/bills"))
@@ -82,7 +85,7 @@ export const BillForm = () => {
         
    return (
     <form className="billsForm">
-    <h2 className="billForm_title">Bill</h2>
+    <h3 className="billForm_title">NEW BILL</h3>
 
       <fieldset>
           <div className="form-group">

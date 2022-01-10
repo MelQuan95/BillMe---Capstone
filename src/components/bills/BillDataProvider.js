@@ -38,14 +38,25 @@ export const BillProvider = (props) => {
         }
 
         const deleteBills = billsId => {
-            return fetch(`http://localhost:8088/news/${billsId}`, {
+            return fetch(`http://localhost:8088/bills/${billsId}`, {
                 method: "DELETE"
             })
                 .then(getBills)
         }
+
+        const paidBills = billsId => {
+            return fetch(`http://localhost:8088/bills/${billsId}`, {
+                method: "PATCH",
+                headers: {'Content-type': 'application/json'},
+                body: JSON.stringify({
+                    paid: true,
+                }),
+            }).then(getBills)
+
+        }
         return (
             <BillContext.Provider value={{ 
-                bills, addBills, getBills, deleteBills, updateBills, getBillsById 
+                bills, addBills, getBills, deleteBills, updateBills, getBillsById, paidBills
             }}>
                 {props.children}
             </BillContext.Provider>

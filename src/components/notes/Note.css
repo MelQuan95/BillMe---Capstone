@@ -1,0 +1,21 @@
+.notesForm {
+    width: 25%;
+    display: block;
+    margin: 15vh auto;
+    
+}
+
+.notecard  {
+    display: flex;
+    justify-content: center;
+}
+
+.NotesHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.noteForm_title {
+    display: flex;
+    justify-content: center;
+}

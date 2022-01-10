@@ -1,23 +1,54 @@
+.billForm_title {
+    display: flex;
+    justify-content: center;
+    color: #ce1224;
+    background-color: rgb(54, 54, 54)
+}
+
 .billsForm {
+    display: flex;
+    flex-direction: column;
     width: 25%;
-    display: block;
-    margin: 25vh auto;
+   
+    
 }
 
-/* .billname {
+.billcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 7vh auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: #ce1224 dashed 2px;
+    
+}
+.container1 {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    border: green dashed 2px
+    
+}
+
+.unpaidbillslist {
     display: flex;
     justify-content: center;
+    color: #ce1224;
+    background-color: rgb(54, 54, 54)
+
+    
 }
 
-.billdate {
+.paidbillslist{
     display: flex;
     justify-content: center;
+    color: green;
+background-color: rgb(54, 54, 54)
 }
-
-.billamount {
-    display: flex;
-    justify-content: center; */
-/* } */
 
 .detailbuttons {
     margin-left: 25%;
@@ -25,11 +56,41 @@
 
 .billcard {
     border: red dashed 2px;
-    width: 25%;
-    display: block;
-    margin: 5vh auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1vh auto;
     color: rgb(58, 58, 58);
+    
 }
+
+
+.billname {
+   display: flex;
+   justify-content: center;
+}
+
+.billdate {
+    display: flex;
+    justify-content: center;
+ }
+
+ .buttons {
+    display: flex;
+    justify-content: center;
+ }
+
+ .fill {
+  width: 20%;
+  
+ }
+
+ .billamount {
+    display: flex;
+    justify-content: center;
+
+ }
 
 @font-face {
     font-family: Cyber;
@@ -59,7 +120,7 @@ body .cybr-btn+.cybr-btn {
     --shadow-secondary-hue: 60;
     --shadow-secondary: hsl(0, 0%, 31%)(var(--shadow-secondary-hue), 90%, 60%);
     --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
-    --border: 4px;
+    --border: 4px dashed black;
     --shimmy-distance: 10;
     color: rgb(54, 54, 54);
     cursor: pointer;
@@ -206,13 +267,25 @@ body .cybr-btn+.cybr-btn {
 }
 
 .link {
-    color: hsl(0, 0%, 31%);
+    color:rgb(58, 58, 58);
+
+    display: flex;
+    justify-content: center;
 }
 
 .link:hover {
     color: hsl(0, 0%, 31%);
 }
 
+.billcheck {
+   height: 25px;
+   width: auto;
+   margin-left: 3px;
+}
+.billcheckall {
+    display: flex;
+   justify-content: center;
+}
 
 
 button {
@@ -251,3 +324,16 @@ button {
   left: 0px;
 }
 /* End of Fill Button  */
+
+
+.billlistpage {
+    display: flex;
+    justify-content: center;
+    margin: 7vh auto;
+}
+
+.billformpage {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 7vh auto;
+}

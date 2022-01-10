@@ -9,7 +9,7 @@ export const NoteForm = () => {
     const { addNotes, updateNotes, getNotesById, getNotes } = useContext(NoteContext)
     const [notes, setNotes] = useState(
         {
-            userId: +localStorage.getItem("billme_user"),
+            billId: 0,
             note: ""
 
         })
@@ -17,7 +17,8 @@ export const NoteForm = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
-    const { noteId } = useParams();
+    const { billId } = useParams();
+
     const navigate = useNavigate();
 
     const handleControlledInputChange = (event) => {
@@ -32,60 +33,44 @@ export const NoteForm = () => {
     const handleSaveNotes = () => {
 
 
-        if (noteId === 0) {
-            window.alert("please add a note")
-        } else {
-            setIsLoading(true);
-            if (noteId) {
-                updateNotes({
-                    userId: +localStorage.getItem("billme_user"),
-                    note: notes.note
-                })
-                    .then(() => navigate(`/notes/${notes.id}`))
-            } else {
-                addNotes({
-                    userId: +localStorage.getItem("billme_user"),
-                    note: notes.note
-                })
-                    .then(() => navigate(`/notes`))
-            }
-        }
+
+        setIsLoading(true);
+
+
+        
+            addNotes({
+                billId: +billId,
+                note: notes.note
+            })
+                .then(() => navigate(`/bills/${billId}`))
+        
     }
 
-    useEffect(() => {
-        if (noteId){
-            getNotesById(noteId)
-            .then(notes => {
-                setNotes(notes)
-                setIsLoading(false)
-            })
-        } else {
-            setIsLoading(true)
-        }
-    }, [])
 
-    return (
-        <form className="notesForm">
-        <h2 className="noteForm_title">Note</h2>
-    
-          <fieldset>
-              <div className="form-group">
-                  <label htmlFor="billName">Text:</label>
-                  <input type="text" name="note" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="add note" defaultValue={notes.note}/>
-              </div>
-          </fieldset>
-    
-    
-    
-    
-          <button class="cybr-btn"
-          disabled={isLoading}
-          onClick={event => {
-            event.preventDefault() 
-            handleSaveNotes()
-          }}>
-        {noteId ? <>Edit note</> : <>Save note</>}  <span aria-hidden class="cybr-btn__glitch">SAVE</span></button>
-      </form>
 
-    )
-}
+
+return (
+    <form className="notesForm">
+        <h2 className="noteForm_title">ADD NOTE</h2>
+
+        <fieldset>
+            <div className="form-group">
+                <label htmlFor="billName"></label>
+                <input type="text" name="note" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="add note" value={notes.note} />
+            </div>
+        </fieldset>
+
+
+
+
+        <button className="cybr-btn"
+            disabled={isLoading}
+            onClick={event => {
+                event.preventDefault()
+                handleSaveNotes()
+            }}>
+            { <>Save note</>}  <span aria-hidden className="cybr-btn__glitch">SAVE</span></button>
+    </form>
+
+)
+ }
