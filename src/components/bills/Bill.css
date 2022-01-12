@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 7vh auto;
+    border: hotpink dashed 3px;
 }
 
 .container2 {
@@ -24,6 +25,7 @@
     flex-direction: column;
     width: 25%;
     border: #ce1224 dashed 2px;
+  
     
 }
 .container1 {
@@ -33,7 +35,17 @@
     border: green dashed 2px
     
 }
+.tots {
+    display: flex;
+    justify-content: center;
+}
 
+.pastMonthContainer {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    border: green dashed 2px
+}
 .unpaidbillslist {
     display: flex;
     justify-content: center;
@@ -92,7 +104,67 @@ background-color: rgb(54, 54, 54)
 
  }
 
-@font-face {
+
+
+
+
+.billlistpage {
+    display: flex;
+    justify-content: center;
+    margin: 7vh auto;
+}
+
+.billformpage {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 7vh auto;
+}
+
+.paid {
+    display: flex;
+    justify-content:space-evenly;
+    width: 75%;
+    margin: 7vh;
+}
+
+.unpaid {
+    display: flex;
+    justify-content:space-evenly;
+    width: 75%;
+}
+
+/* Fill button styling */
+.fill {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 6px 15px 10px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: #ce1224;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  /* End of Fill Button  */
+  
+  @font-face {
     font-family: Cyber;
     src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
     font-display: swap;
@@ -268,9 +340,9 @@ body .cybr-btn+.cybr-btn {
 
 .link {
     color:rgb(58, 58, 58);
-
     display: flex;
     justify-content: center;
+    font-size: 15px;
 }
 
 .link:hover {
@@ -291,49 +363,4 @@ body .cybr-btn+.cybr-btn {
 button {
   margin: 50px;
   font-family: inherit;
-}
-
-
-/* Fill button styling */
-.fill {
-  font-size: 15px;
-  font-weight: 100;
-  letter-spacing: 1px;
-  padding: 6px 15px 10px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.fill::after {
-  content: "";
-  background-color: #ce1224;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.fill:hover::after {
-  top: 0px;
-  left: 0px;
-}
-/* End of Fill Button  */
-
-
-.billlistpage {
-    display: flex;
-    justify-content: center;
-    margin: 7vh auto;
-}
-
-.billformpage {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 7vh auto;
 }

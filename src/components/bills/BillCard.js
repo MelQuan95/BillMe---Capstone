@@ -21,7 +21,7 @@ export const BillCard = ({ bill }) => {
                 </Link></h3>
 
                 <div className="billdate">{bill.date}</div>
-                <div className="billamount">{bill.amount}</div>
+                <div className="billamount">${bill.amount}</div>
 
                 <div className="billcheckall">
                     <label htmlFor="billcheck">paid:  </label>

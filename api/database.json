@@ -37,12 +37,12 @@
       "amount": 77
     },
     {
+      "id": 10,
       "userId": 2,
       "name": "water",
-      "date": "2022-02-01",
+      "date": "2022-02-18",
       "amount": 125.45,
-      "paid": true,
-      "id": 10
+      "paid": true
     },
     {
       "id": 11,
@@ -58,22 +58,22 @@
       "name": "text 2",
       "date": "2021-12-17",
       "amount": 14,
-      "paid": false
+      "paid": true
     },
     {
+      "id": 13,
       "userId": 2,
       "name": "try1",
       "date": "2022-01-10",
-      "amount": 1,
-      "paid": false,
-      "id": 13
+      "amount": 123,
+      "paid": false
     },
     {
       "userId": 2,
       "name": "try2",
       "date": "2022-01-11",
       "amount": 2,
-      "paid": false,
+      "paid": true,
       "id": 14
     },
     {
@@ -91,6 +91,30 @@
       "amount": 0,
       "paid": false,
       "id": 16
+    },
+    {
+      "userId": 2,
+      "name": "newnew",
+      "date": "",
+      "amount": 0,
+      "paid": false,
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "name": "NewNEW",
+      "date": "2022-01-12",
+      "amount": 7777,
+      "paid": false,
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "name": "Sarah Ashby",
+      "date": "2022-01-29",
+      "amount": 0,
+      "paid": false,
+      "id": 19
     }
   ],
   "notes": [
@@ -118,12 +142,6 @@
       "billId": 1,
       "note": "hey hey hey",
       "id": 10
-    }
-  ],
-  "months": [
-    {
-      "billId": "1",
-      "id": 6
     }
   ]
 }

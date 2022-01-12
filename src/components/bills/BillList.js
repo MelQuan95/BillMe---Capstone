@@ -15,78 +15,74 @@ export const BillList = () => {
   const sortedMonths = bills.sort((a, b) => {
     return new Date(a.date) - new Date(b.date)
 
-})
+  })
 
 
-const billTotal = () => {
+  const billTotal = () => {
 
-    
-  let sum = 0;
-  
-  
- 
-  
-  for (let i = 0; i < bills.length; i++ ) {
-      let currentBillInLoop = (bills[i].paid)
-      console.log(currentBillInLoop)
-      if(currentBillInLoop === false){
-         sum += (bills[i].amount)
-      }
+
+    let sum = 0;
+
+
+    const totalArray = bills.filter((unpaid) => {
+      return unpaid.paid === false && new Date(unpaid.date).getMonth() === new Date().getMonth()
+    })
      
-    
- }
- return sum
- 
- 
- }
- 
- const MonthTotal = (p) => {
- const currentMonth = new Date().getMonth()
- const billMonth = new Date(p.date).getMonth()
-//  const [month, date, year ]  = [date.getMonth(), date.getDate(), date.getFullYear()];
- 
- return `${currentMonth} <- Are these Equal? -> ${billMonth}`
+     for (let i = 0; i < totalArray.length; i++ ) {
+        
+         
+            sum += (totalArray[i].amount)
+         
 
- }
+    
+
+
+    }
+    return sum
+
+
+  }
+
+  const MonthTotal = (p) => {
+    const currentMonth = new Date().getMonth()
+    const billMonth = new Date(p.date).getMonth()
+
+    return `${currentMonth} <- Are these Equal? -> ${billMonth}`
+
+  }
 
   const navigate = useNavigate()
   return (
     <>
-<div className="container2">
-    
-        {/* 1. filter bills for unpaid bills only 
-          2.create a place for paid bills 
-          3. make a way to mark unpaid bills as paid */}
+      <div className="container2">
+
+
         <h3 className="unpaidbillslist">UNPAID</h3>
-        <p>{billTotal()}</p>
+        <p className="tots">${billTotal()}</p>
 
         {sortedMonths.filter((unpaid) => {
-          return unpaid.paid === false && unpaid.date === unpaid.currentMonth
+          return unpaid.paid === false && new Date(unpaid.date).getMonth() === new Date().getMonth()
         }).map(bill => {
           return (
-          <>
-          {MonthTotal(bill)}
-          <BillCard
+            <>
+              {/* {MonthTotal(bill)} */}
+              <BillCard
 
-            key={bill.id}
-            bill={bill}
+                key={bill.id}
+                bill={bill}
 
-          />
-         </> )
+              />
+              
+            </>)
         })
         }
-
-
-
-
-
-
-
-
-    </div>
+      </div>
 
     </>
   )
+
+
+ 
 }
 
 
@@ -95,3 +91,6 @@ const billTotal = () => {
       <button onClick={() => navigate("/bills/create")}>
         New Bill
       </button> */
+/* 1. filter bills for unpaid bills only
+         2.create a place for paid bills 
+         3. make a way to mark unpaid bills as paid */
