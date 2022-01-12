@@ -21,6 +21,7 @@ export const BillProvider = (props) => {
                 body: JSON.stringify(BillsObj)
             })
             .then(response => response.json())
+            .then(getBills)
         }
         const updateBills = bill => {
             return fetch(`http://localhost:8088/bills/${bill.id}`, {

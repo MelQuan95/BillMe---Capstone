@@ -55,7 +55,7 @@ export const BillForm = () => {
         
                     
                 })
-                .then(() => navigate(`/bills/${bill.id}`))
+                .then(() => navigate(`/`))
             } else {
             addBills ({
                 userId: +localStorage.getItem("billme_user"),
@@ -64,9 +64,16 @@ export const BillForm = () => {
                 amount: +bill.amount,
                 paid: false
                     
+            }).then(() => setBill({
+                userId: +localStorage.getItem("billme_user"),
+                name: "",
+                date: "",
+                amount: "",
+                paid: ""
+    
             })
-            .then(() => navigate("/bills"))
-            }
+            )
+        }  
         }
     }
     

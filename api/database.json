@@ -16,22 +16,22 @@
       "id": 1,
       "userId": 2,
       "name": "AEP",
-      "date": "2022-02-05",
-      "amount": 89.32,
+      "date": "2022-01-15",
+      "amount": 100.21,
       "paid": false
     },
     {
       "id": 8,
       "userId": 2,
-      "name": "NEEEEEEw",
-      "date": "2022-04-08",
+      "name": "GAS",
+      "date": "2022-01-20",
       "amount": 120.35,
       "paid": false
     },
     {
       "id": 9,
       "userId": 2,
-      "name": "test",
+      "name": "WATER",
       "date": "2022-01-11",
       "paid": true,
       "amount": 77
@@ -39,133 +39,182 @@
     {
       "id": 10,
       "userId": 2,
-      "name": "water",
-      "date": "2022-02-18",
+      "name": "Netflix",
+      "date": "2022-01-18",
       "amount": 125.45,
       "paid": false
     },
     {
       "id": 11,
       "userId": 2,
-      "name": "fffff",
-      "date": "2022-02-25",
-      "amount": 100,
+      "name": "YOUTUBE TV",
+      "date": "2022-01-25",
+      "amount": 75,
       "paid": false
     },
     {
       "id": 12,
       "userId": 2,
-      "name": "text 2",
+      "name": "RENT",
       "date": "2021-12-17",
-      "amount": 14,
+      "amount": 750,
       "paid": false
     },
     {
       "id": 13,
       "userId": 2,
-      "name": "try1",
+      "name": "SEWER",
       "date": "2022-01-10",
-      "amount": 123,
+      "amount": 34,
+      "paid": true
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "name": "VET/DOG!",
+      "date": "2022-01-04",
+      "amount": 450,
+      "paid": true
+    },
+    {
+      "id": 15,
+      "userId": 2,
+      "name": "INTERNET",
+      "date": "2022-01-07",
+      "amount": 80,
+      "paid": true
+    },
+    {
+      "id": 16,
+      "userId": 2,
+      "name": "INSURANCE",
+      "date": "2022-01-02",
+      "amount": 100,
       "paid": true
     },
     {
       "userId": 2,
-      "name": "try2",
-      "date": "2022-01-11",
-      "amount": 2,
+      "name": "RENT",
+      "date": "2022-01-03",
+      "amount": 750,
       "paid": true,
-      "id": 14
-    },
-    {
-      "userId": 2,
-      "name": "try3",
-      "date": "2022-01-12",
-      "amount": 3,
-      "paid": true,
-      "id": 15
-    },
-    {
-      "userId": 2,
-      "name": "mel",
-      "date": "2022-01-12",
-      "amount": 0,
-      "paid": true,
-      "id": 16
-    },
-    {
-      "userId": 2,
-      "name": "newnew",
-      "date": "",
-      "amount": 0,
-      "paid": false,
       "id": 17
     },
     {
+      "id": 15,
       "userId": 2,
-      "name": "NewNEW",
-      "date": "2022-01-12",
-      "amount": 7777,
-      "paid": false,
-      "id": 18
+      "name": "INTERNET",
+      "date": "2021-12-07",
+      "amount": 80,
+      "paid": true
     },
     {
+      "id": 16,
       "userId": 2,
-      "name": "Sarah Ashby",
-      "date": "2021-12-29",
-      "amount": 0,
-      "paid": false,
-      "id": 19
+      "name": "INSURANCE",
+      "date": "2021-12-02",
+      "amount": 100,
+      "paid": true
     },
     {
+      "id": 1,
       "userId": 2,
-      "name": "NewNEW1",
-      "date": "2021-12-13",
-      "amount": 74774,
-      "paid": false,
-      "id": 20
+      "name": "AEP",
+      "date": "2021-12-15",
+      "amount": 89.32,
+      "paid": true
     },
     {
+      "id": 8,
       "userId": 2,
-      "name": "fffff",
-      "date": "2022-01-27",
-      "amount": 3,
-      "paid": false,
-      "id": 21
+      "name": "GAS",
+      "date": "2021-12-20",
+      "amount": 120.35,
+      "paid": true
     },
     {
+      "id": 9,
       "userId": 2,
-      "name": "NewNEW",
-      "date": "2022-01-22",
-      "amount": -2,
-      "paid": false,
-      "id": 22
+      "name": "WATER",
+      "date": "2021-12-11",
+      "paid": true,
+      "amount": 77
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "name": "Netflix",
+      "date": "2021-12-18",
+      "amount": 125.45,
+      "paid": true
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "name": "YOUTUBE TV",
+      "date": "2021-12-25",
+      "amount": 75,
+      "paid": true
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "name": "SEWER",
+      "date": "2021-12-10",
+      "amount": 26,
+      "paid": true
     }
   ],
   "notes": [
     {
-      "billId": "1",
-      "note": "are you working?",
+      "billId": 1,
+      "note": "auto on the 15th of every month",
       "id": 6
     },
     {
-      "billId": 1,
-      "note": "are you working?",
+      "billId": 14,
+      "note": "first visit. not a monthly recurring cost",
       "id": 7
     },
     {
-      "billId": 1,
-      "note": "AUTO PAYMENT ",
+      "billId": 10,
+      "note": "AUTO PAYMENT 18th every month",
       "id": 8
     },
     {
-      "billId": 1,
-      "note": "work still",
+      "billId": 8,
+      "note": "up around $50-$75 dollars in winter",
       "id": 9
     },
     {
-      "billId": 1,
-      "note": "hey hey hey",
+      "billId": 11,
+      "note": "not on autopay ",
       "id": 10
+    },
+    {
+      "billId": 16,
+      "note": "give to mom by 2nd of every month",
+      "id": 11
+    },
+    {
+      "billId": 17,
+      "note": "due by the 5th",
+      "id": 12
+    },
+    {
+      "billId": 15,
+      "note": "pay at the same time as youtube tv",
+      "id": 13
+    },
+    {
+      "billId": 13,
+      "note": "pay with water bill",
+      "id": 14
+    },
+    {
+      "billId": 9,
+      "note": "not on autopay ",
+      "id": 15
     }
   ]
 }

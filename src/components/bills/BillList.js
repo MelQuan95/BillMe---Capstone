@@ -58,7 +58,7 @@ export const BillList = () => {
 
 
         <h3 className="unpaidbillslist">UNPAID</h3>
-        <p className="tots">${billTotal()}</p>
+        <p className="tots">TOTAL: ${billTotal()}</p>
 
         {sortedMonths.filter((unpaid) => {
           return unpaid.paid === false && new Date(unpaid.date).getMonth() === new Date().getMonth()

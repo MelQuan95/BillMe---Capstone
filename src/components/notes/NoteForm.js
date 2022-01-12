@@ -42,7 +42,7 @@ export const NoteForm = () => {
                 billId: +billId,
                 note: notes.note
             })
-                .then(() => navigate(`/bills/${billId}`))
+                .then(() => navigate(`/`))
         
     }
 

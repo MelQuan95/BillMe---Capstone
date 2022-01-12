@@ -55,7 +55,7 @@ return sum
     
 
         <h3 className="paidbillslist"> PAID</h3>
- <p className=" tots">${paidBillTotal()}</p>
+ <p className=" tots">TOTAL: ${paidBillTotal()}</p>
 {sortedMonths.filter((paid) => {
           return paid.paid === true && new Date(paid.date).getMonth() === new Date().getMonth()
         }).map(bill => {

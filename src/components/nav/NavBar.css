@@ -10,3 +10,21 @@ a.nav-link:hover {
  a.nav-link:active {
      color: #ce1224;
  }
+
+ img {
+     
+     height: 15vh;
+     width: auto;
+ }
+
+
+.billmelogo { 
+    float: left; 
+
+};
+
+.logo {
+    height: 25%;
+     width: auto;
+}
+ 

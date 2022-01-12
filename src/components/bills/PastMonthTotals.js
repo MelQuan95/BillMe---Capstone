@@ -64,8 +64,8 @@ return( current.getMonth());
     <div className="pastMonthContainer">
     
 
-        <h3 className="paidbillslist"> Past Month</h3>
- <p className="tots">${paidBillTotal()}</p>
+        <h3 className="paidbillslist"> PAST MONTH</h3>
+ <p className="tots">TOTAL: ${paidBillTotal()}</p>
 {sortedMonths.filter((paid) => {
           const current = new Date();
   
