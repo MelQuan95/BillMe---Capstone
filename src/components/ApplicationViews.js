@@ -23,7 +23,7 @@ export const ApplicationViews = () => {
                 <Route path="bills/*" element={<> <div className="billlistpage"> <div className="unpaid"><BillList /></div> <div className="paid"><BillPaidList/> </div> </div> </>} />
                 <Route path="bills/create/*" element={<> <div className="billformpage"> <BillForm /> </div> </>} />
                 <Route path="bills/detail/:billId/*" element={<><BillDetails /> <NoteForm /> <NoteList /> </>} />
-                <Route path="bills/edit/:billId/*" element={<> <BillForm />  </>}/>
+                <Route path="bills/edit/:billId/*" element={<> <div className="editpageform"><BillForm /></div>  </>}/>
                 
 
 

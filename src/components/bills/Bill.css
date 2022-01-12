@@ -3,15 +3,23 @@
     justify-content: center;
     color: #ce1224;
     background-color: rgb(54, 54, 54)
+
+}
+
+.billForm_title:hover {
+        background: linear-gradient(44deg, #128d5ef5 70%,rgb(54, 54, 54) 75%);
 }
 
 .billsForm {
     display: flex;
     flex-direction: column;
     width: 25%;
+    height: 40vh;
    
     
 }
+
+
 
 .billcontainer {
     display: flex;
@@ -20,19 +28,82 @@
     border: hotpink dashed 3px;
 }
 
+
+/* container2 unpiad */
 .container2 {
     display: flex;
     flex-direction: column;
     width: 25%;
     border: #ce1224 dashed 2px;
-  
-    
+    height: 40vh;
+    overflow-y: auto;
+    text-align: center;
 }
+/* end container 2 unpaid */
+/* container2 scroll  */
+.container2::-webkit-scrollbar {
+    width: 12px;   
+              /* width of the entire scrollbar */
+  }
+  
+  .container2::-webkit-scrollbar-track {
+    background: linear-gradient(55deg, #128d5ef5 70%, #167a54f5 70%);/* color of the tracking area */
+  }
+  
+  .container2::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 54, 54);    /* color of the scroll thumb */
+    border-radius: 15px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(18, 117, 71); /* creates padding around scroll thumb */
+    overflow-y: auto;
+    text-align: center; 
+  }
+/* end contianer2 scroll */
+/* scroll for body */
+body::-webkit-scrollbar {
+    width: 12px;   
+              /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(55deg, #128d5ef5 70%, #167a54f5 70%);/* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 54, 54);    /* color of the scroll thumb */
+    border-radius: 15px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(18, 117, 71); /* creates padding around scroll thumb */
+    overflow-y: auto;
+    text-align: center; 
+  }
+/* end scroll for body */
+ 
+
+  .container1::-webkit-scrollbar {
+    width: 12px;   
+              /* width of the entire scrollbar */
+  }
+  
+  .container1::-webkit-scrollbar-track {
+    background: linear-gradient(55deg, #128d5ef5 70%, #167a54f5 70%);/* color of the tracking area */
+  }
+  
+  .container1::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 54, 54);    /* color of the scroll thumb */
+    border-radius: 15px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(18, 117, 71); /* creates padding around scroll thumb */
+    overflow-y: auto;
+    text-align: center; 
+  }
+
 .container1 {
     display: flex;
-    width: 25%;
     flex-direction: column;
-    border: green dashed 2px
+    width: 25%;
+    border: #ce1224 dashed 2px;
+    height: 40vh;
+    overflow-y: auto;
+    text-align: center;
+    
     
 }
 .tots {
@@ -44,16 +115,41 @@
     display: flex;
     width: 25%;
     flex-direction: column;
-    border: green dashed 2px
+    border: green dashed 2px;
+    overflow-y: auto;
+    text-align: center;
+    height: 40vh;
+
 }
+.pastMonthContainer::-webkit-scrollbar {
+    width: 12px;   
+              /* width of the entire scrollbar */
+  }
+  
+  .pastMonthContainer::-webkit-scrollbar-track {
+    background: linear-gradient(55deg, #128d5ef5 70%, #167a54f5 70%);/* color of the tracking area */
+  }
+  
+  .pastMonthContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 54, 54);    /* color of the scroll thumb */
+    border-radius: 15px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(18, 117, 71); /* creates padding around scroll thumb */
+    overflow-y: auto;
+    text-align: center; 
+  }
+
+
 .unpaidbillslist {
     display: flex;
     justify-content: center;
     color: #ce1224;
-    background-color: rgb(54, 54, 54)
-
-    
+    background-color: rgb(54, 54, 54);
 }
+.unpaidbillslist:hover {
+background: linear-gradient(44deg, #128d5ef5 70%,#ce1224 75%);
+
+}
+
 
 .paidbillslist{
     display: flex;
@@ -363,4 +459,11 @@ body .cybr-btn+.cybr-btn {
 button {
   margin: 50px;
   font-family: inherit;
+}
+
+
+.editpageform {
+    display: flex;
+    justify-content: center;
+    margin: 7vh auto;
 }

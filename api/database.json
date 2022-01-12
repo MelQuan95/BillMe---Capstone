@@ -18,7 +18,7 @@
       "name": "AEP",
       "date": "2022-02-05",
       "amount": 89.32,
-      "paid": true
+      "paid": false
     },
     {
       "id": 8,
@@ -42,7 +42,7 @@
       "name": "water",
       "date": "2022-02-18",
       "amount": 125.45,
-      "paid": true
+      "paid": false
     },
     {
       "id": 11,
@@ -50,7 +50,7 @@
       "name": "fffff",
       "date": "2022-02-25",
       "amount": 100,
-      "paid": true
+      "paid": false
     },
     {
       "id": 12,
@@ -58,7 +58,7 @@
       "name": "text 2",
       "date": "2021-12-17",
       "amount": 14,
-      "paid": true
+      "paid": false
     },
     {
       "id": 13,
@@ -66,7 +66,7 @@
       "name": "try1",
       "date": "2022-01-10",
       "amount": 123,
-      "paid": false
+      "paid": true
     },
     {
       "userId": 2,
@@ -81,7 +81,7 @@
       "name": "try3",
       "date": "2022-01-12",
       "amount": 3,
-      "paid": false,
+      "paid": true,
       "id": 15
     },
     {
@@ -89,7 +89,7 @@
       "name": "mel",
       "date": "2022-01-12",
       "amount": 0,
-      "paid": false,
+      "paid": true,
       "id": 16
     },
     {
@@ -111,10 +111,34 @@
     {
       "userId": 2,
       "name": "Sarah Ashby",
-      "date": "2022-01-29",
+      "date": "2021-12-29",
       "amount": 0,
       "paid": false,
       "id": 19
+    },
+    {
+      "userId": 2,
+      "name": "NewNEW1",
+      "date": "2021-12-13",
+      "amount": 74774,
+      "paid": false,
+      "id": 20
+    },
+    {
+      "userId": 2,
+      "name": "fffff",
+      "date": "2022-01-27",
+      "amount": 3,
+      "paid": false,
+      "id": 21
+    },
+    {
+      "userId": 2,
+      "name": "NewNEW",
+      "date": "2022-01-22",
+      "amount": -2,
+      "paid": false,
+      "id": 22
     }
   ],
   "notes": [
